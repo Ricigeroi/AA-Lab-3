@@ -104,3 +104,5 @@ print("Algorithm 2: ", second, "seconds")
 print("Algorithm 3: ", third, "seconds")
 print("Algorithm 4: ", fourth, "seconds")
 print("Algorithm 5: ", fifth, "seconds")
+
+
