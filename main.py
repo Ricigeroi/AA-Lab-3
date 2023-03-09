@@ -1,3 +1,4 @@
+import time
 
 
 def algorithm_1(n):
@@ -82,12 +83,24 @@ def algorithm_5(n):
     return c
 
 
-n = 10
-print(algorithm_1(n))
-print(algorithm_2(n))
-print(algorithm_3(n))
-print(algorithm_4(n))
-print(algorithm_5(n))
 
-print(algorithm_1(n) == algorithm_2(n) == algorithm_3(n) == algorithm_4(n) == algorithm_5(n))
+def exec_time(function, n):
+    start_time = time.time()
+    function(n)
+    end_time = time.time()
+    return end_time - start_time
 
+
+n = 50000
+
+first = exec_time(algorithm_1, n)
+second = exec_time(algorithm_2, n)
+third = exec_time(algorithm_3, n)
+fourth = exec_time(algorithm_4, n)
+fifth = exec_time(algorithm_5, n)
+
+print("Algorithm 1: ", first, "seconds")
+print("Algorithm 2: ", second, "seconds")
+print("Algorithm 3: ", third, "seconds")
+print("Algorithm 4: ", fourth, "seconds")
+print("Algorithm 5: ", fifth, "seconds")
