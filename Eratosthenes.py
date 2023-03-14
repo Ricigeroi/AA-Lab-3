@@ -92,7 +92,7 @@ def exec_time(function, n):
 
 
 number = []
-for i in range(5000, 10001, 2500):
+for i in range(5000, 70001, 2500):
     number.append(i)
 
 print(number)
